@@ -32,26 +32,27 @@
 
 @media (max-width: 480px) {
     .To-Do{
-        width: 95%;
-        max-width: 350px;
-        padding: 15px;
+        width: 100%;
+        max-width: 400px;
+        padding: 17px;
+        margin-bottom: 15px;
     }
     .To-Do h2{
-        font-size: 1.2rem;
+        font-size: 1.4rem;
     }
     input{
-        font-size: 13px;
+        font-size: 12px;
     }
     .add{
-        padding: 8px 18px;
+        padding: 9px 18px;
         font-size: 13px;
     }
     .task{
         font-size: 13px;
-        font-size: 65%;
     }
     .edit, .delete{
         font-size: 13px;
-        padding: 0.3rem 0.5rem;
+        padding: 0.4rem 0.5rem;
+        margin-right: 0px;
     }
 }

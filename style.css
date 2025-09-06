@@ -103,7 +103,6 @@ input {
     background: rgba(255, 255, 255, 0.2);
     border-radius: var(--task-radius);
     box-shadow: var(--shadow);
-    gap: 10px;
     transition: transform 0.2s, background 0.3s;
 }
 .todo:hover {
