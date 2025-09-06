@@ -1,0 +1,57 @@
+@media (max-width: 768px) {
+    .To-Do{
+        width: 95%;
+        max-width: 400px;
+        padding: 20px;
+    }
+    .To-Do h2{
+        font-size: 1.8rem;
+    }
+    .box{
+        padding-left: 10px;
+    }
+    input{
+        font-size: 14px;
+        padding: 8px;
+    }
+    .add{
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+    .task{
+        font-size: 14px;
+        max-width: 70%;
+        word-break: break-all;
+        overflow-wrap: break-word;
+    }
+    .edit, .delete{
+        font-size: 14px;
+        padding: 0.4rem 0.6rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .To-Do{
+        width: 95%;
+        max-width: 350px;
+        padding: 15px;
+    }
+    .To-Do h2{
+        font-size: 1.2rem;
+    }
+    input{
+        font-size: 13px;
+    }
+    .add{
+        padding: 8px 18px;
+        font-size: 13px;
+    }
+    .task{
+        font-size: 13px;
+        font-size: 65%;
+    }
+    .edit, .delete{
+        font-size: 13px;
+        padding: 0.3rem 0.5rem;
+    }
+}

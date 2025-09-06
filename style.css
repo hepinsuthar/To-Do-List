@@ -1,0 +1,147 @@
+:root {
+    /* Colors */
+    --primary-bg: linear-gradient(135deg, #153677, #4e085f);
+    --card-bg: #ffffff;
+    --primary-color: #fa4554;
+    --primary-hover: #fb1428;
+    --input-bg: #edeef0;
+    --heading-color: #002765;
+    --text-dark: #000000;
+    --text-light: #ffffff;
+
+    /* Buttons & Shadows */
+    --button-padding: 16px 50px;
+    --button-radius: 40px;
+    --task-padding: 0.8rem;
+    --task-radius: 8px;
+    --shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+
+    /* Layout */
+    --container-padding: 40px 30px 70px;
+    --container-radius: 10px;
+}
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: var(--primary-bg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: var(--text-light);
+}
+
+/* Main Container */
+.To-Do {
+    width: 100%;
+    max-width: 540px;
+    background: var(--card-bg);
+    padding: var(--container-padding);
+    border-radius: var(--container-radius);
+    color: var(--text-dark);
+    display: flex;
+    flex-direction: column;
+    max-height: 80vh; /* Prevents full-page overflow */
+}
+
+.To-Do h2 {
+    color: var(--heading-color);
+    margin-bottom: 20px;
+}
+
+/* Input Box */
+.box {
+    display: flex;
+    justify-content: space-between;
+    background: var(--input-bg);
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+}
+
+input {
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+    font-size: 14px;
+}
+
+/* Add Button */
+.add {
+    border: none;
+    outline: none;
+    padding: var(--button-padding);
+    background: var(--primary-color);
+    color: var(--text-light);
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: var(--button-radius);
+}
+.add:hover {
+    background: var(--primary-hover);
+}
+
+/* Task List */
+.task-container {
+    flex: 1;
+    overflow-y: auto; /* Makes task list scrollable */
+    padding: 1px 5px 4px 8px;
+}
+.todo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+    padding: var(--task-padding);
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: var(--task-radius);
+    box-shadow: var(--shadow);
+    gap: 10px;
+    transition: transform 0.2s, background 0.3s;
+}
+.todo:hover {
+    transform: translateY(-3px);
+    background: rgba(255, 255, 255, 0.3);
+}
+
+/* Task Text */
+.task {
+    flex: 1;
+    min-height: 0;
+    max-width: 75%;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    color: var(--text-dark);
+    word-break: break-all;
+    white-space: normal;
+}
+
+/* Edit & Delete Buttons */
+.delete,
+.edit {
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.edit {
+    margin-right: 5px;
+    padding: 0.6rem 1rem;
+    border-radius: var(--task-radius);
+    border: none;
+    background: var(--primary-color);
+    color: var(--text-light);
+    font-size: 18px;
+}
+
+.delete:hover,
+.edit:hover {
+    transform: scale(1.1);
+}
